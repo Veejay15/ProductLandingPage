@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./contactus.css">
+    <script defer src="./survey.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Product Landing Page</title>
+   </head>
+<body>
+  <header>
+  <nav class="nav-bar">
+    <div class="main">
+      <div class="logo">
+        <a href="#section1"><img src='assets/logo.png' alt="">VEEJAY'S BREW</div>
+       <ul class="topnav" id="myTopnav">
+        <li><a href="#section2">PRODUCTS</a></li>
+        <li><a href="#section3">SERVICES</a></li>
+        <li><a href="#section2">BEST SELLERS</a></li>
+        <li><a href="#section4">CONTACT US</a></li>
+        
+        <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+  <div class="main-section" id="section1">
+  <div class="center"></div>
+  <div class="center">
+    <div class="grid-container">
+      <div class="grid-item1"> <label><b>VEEJAY'S BREW AROMA</b></label>
+        <p class="message"> The average Filipino coffee drinker consumes 3.1 cups of coffee per day. In 2022, E-Imports reports that Filipino coffee drinkers are drinking more coffee per day. In recent years, <b>VEEJAY'S BREW</b>  is one of the best coffee shop that Filipino coffee drinkers prefer which was established since January 1995. According to SWS Survey, 9/10 Filipinos chose Veejay's Brew because of its savory flavor, brewed aroma, and it's shop's specialty which a coffee drinker can't resist. </p>
+           </div>
+</div>
+<div class="read_bt"><a href="#section3">Read More</a></div>
+</div>
+</div>
+</div>
+<div class="bestseller-section"id="section2">
+<div class="center">
+  <div class="grid-container2">
+    <div class="grid-item2">
+      <h1>  OUR BEST SELLERS COFFEE</h1>
+    <h4>Our best-tasting coffees serve as our trademark why our shop is a remarkable brand. </h4>
+      
+      <div class="bestseller">
+        <div class="gallery">
+          <a target="_blank" href="assets/img-5.png">
+            <img src="assets/img-5.png" alt="Coffee Combo" >
+          </a>
+          <div class="desc"><b>Coffee Combo </b></div>
+        </div>
+      </div>
+      <div class="bestseller">
+        <div class="gallery">
+          <a target="_blank" href="assets/img-6.png">
+            <img src="assets/img-6.png" alt="Crazy Capuchino ">
+          </a>
+          <div class="desc"><b>Crazy Capuchino </b></div>
+        </div>
+      </div>
+      
+      <div class="bestseller">
+        <div class="gallery">
+          <a target="_blank" href="assets/img-8.png">
+            <img src="assets/img-8.png" alt="Coffee Cream">
+          </a>
+          <div class="desc"><b>Coffee Cream  </b></div>
+        </div>
+      </div>
+      <div class="bestseller">
+        <div class="gallery">
+          <a target="_blank" href="assets/img-4.png">
+            <img src="assets/img-4.png" alt="Power Coffee">
+          </a>
+          <div class="desc"><b>Power Coffee </b></div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+ </div>
+           </div>
+ </div>
+</div>
+<div class="coffeeshop-section"id="section3">
+   <div class="center">
+      <section class="video-container">
+         <div class="message">
+            <label><b>OUR COFFEE SHOPS</b></label>
+            <p class="message"> <b> Veejay's Brew </b>is operating accross geo-location as we have launched coffee shops from regions 1-10 of the country. As we operate on a 24/7 hoop, the demands of our products are high which is the  reason why we made to decide to make Veejay's Brew a country-wide brand. As we speak, our coffee shops are initially located on areas with high demands such as Capital Cities, schools, and downtowns. We are proud to serve our valued customers througout our <b>2,000+</b> shops nationwide. </p>
+               
+         </div>
+         <div class="video">
+           <iframe src = "https://www.youtube.com/embed/t8k71QcArnk" frameborder = "0" allowfullscreen></iframe>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="img4">
+   <video id="background-video"id="section2" autoplay loop muted="" autoplay="" playsinline="" src="https://sutherlandglobal.azureedge.net/-/media/Sutherland/Videos/Sutherland-CET.mp4?rev=8843b17b-12c8-4c40-9a51-9dfbe2a77312"></video>">
+    </video>
+    <div class="form" id="section4">
+   
+            <form onsubmit="return mailchk() && nameval()"  action="./thankyou.html"
+             id="form" action="/">
+             
+                <h1>Contact Us</h1>
+                <p>Your voice matters! Feel free to ask any inquiry.  </p>
+                <div class="input-control">
+                    <label for="name">Full Name</label>
+                    <input class="text" type="text" name="name" id="name" placeholder="Enter your name" required><br>
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="mail">Email</label>
+                    <input type="email" id="email"
+                    pattern="+@"  required placeholder="Enter your Email" onblur="mailchk()" required><br>
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="number">Contact Number</label>
+                    <input class="text" type="text" name="number" id="name" placeholder="Enter your contact number" required><br>
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="text">Leave us a message. </label>
+                    <textarea id="text" name="text" placeholder="Write something.." style="height:200px" required></textarea>
+                </div>
+                <button id="submit">Submit</button>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-skype"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </form>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+          </body>
+          
+          
+</html>
